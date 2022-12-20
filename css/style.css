@@ -1,23 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
 }
 
 /* AJUSTES COMPARTIDOS  */
 
 
-.layOut {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 2fr 7fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-
+body {
+    width: 100vw !important;
+    height: 100vh !important;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 
@@ -26,12 +19,8 @@
 @media screen and (max-width: 1920px) {
     
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end ;
     background-color: #9AD3CD;
     color: #010c09;
-    grid-area: header;
 }
 
 
@@ -39,42 +28,17 @@ header {
     /* LOGO */
 
     header h1 {
-        display: flex;
+        color: #010c09;
         text-align: left;
         font-style: normal;
         font-weight: bold;
         font-size: 24;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 25px;
+        font-family: 'Ubuntu', sans-serif !important;
+
 
     
     }
-    /* NAV */
-
-    header ul {
-        display: flex;
-        flex-wrap: nowrap;
-        align-content: flex-end;
-        justify-content: space-between;
-        grid-area: nav;
-        list-style: none;
-        font-size: 0;
-        gap: 10px;
-        
-    
-    }
-    
-    header ul li {
-        background-color: #71b8b0;
-        color: #b8d5cc;
-        border: 2px solid #09c184;
-        border-radius: 5px;
-    }
-    header ul li a {
-        text-decoration: none;
-        color: #b8d5cc;
-    }
-
+  
 
 
     .textoNav {
@@ -89,19 +53,14 @@ header {
     
     /* MAIN */
     main {
-        grid-area: main;
         background-color: #D9D9D9;
         color: #050b15;
 
     }
 
-    .mainIndex {
-        display: flex;
-        justify-content: space-around;
 
-       
 
-    }
+
 
     .mainQuienes {
         display: flex;
@@ -126,10 +85,10 @@ header {
 
     
     /* IMAGENES */
-    .imgIndex {
+    .imgIndex  {
 
-        width: 380px;
-        height: 380px;
+        width: 380px !important;
+        height: 380px !important;
 
 
     }
@@ -154,18 +113,15 @@ header {
     
     
     footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         background-color: #9AD3CD;
         color: #010d08;
-        grid-area: footer;
+
     
     }
     
     /* COPYRIGHT */
     footer p {
-        margin-left: 10px;
+   
 
     
     }
@@ -173,9 +129,9 @@ header {
     
     /* REDES SOCIALES */
     footer ul {
-        display: flex;
+ 
         list-style: none;
-        margin-right: 10px;
+    
       
 
 
@@ -186,20 +142,20 @@ header {
      /* ICONOS */
 
      .instagramIcon {
-        width: 32px;
-        margin-top: 5px;
+        width: 32px !important;
+        margin-top: 5px !important;
 
      }
 
      .facebookIcon {
-        width: 40px;
+        width: 40px !important;
 
      }
 
 
      .twitterIcon {
-        width: 30px;
-        margin-top: 5px;
+        width: 30px !important;
+        margin-top: 5px !important;
 
      }
 
