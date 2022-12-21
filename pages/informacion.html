@@ -9,86 +9,111 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Información | SinFronteras.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,700&display=swap"
+      rel="stylesheet">
 </head>
 
-<body class="layOut">
+<body class="container-fluid">
 
 
-    <header>
-        <h1>SinFronteras.Com</h1>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Inicio</a>
+    <header class="row-3">
+        <div class="container-fluid">
+          <div class="d-sm-flex justify-content-between align-items-end">
+  
+  
+            <h1 class="p-2">SinFronteras.Com</h1>
+  
+            <nav class="navbar navbar-expand-lg">
+  
+              <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href=""></a>
-                        <a class="nav-link active" href="./informacion.html">Información</a>
-                        <a class="nav-link" href="./experiencias.html">Experiencias</a>
-                        <a class="nav-link" href="./quienessomos.html">Quiénes Somos?</a>
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                  <div class="navbar-nav">
+  
+                    <a class="nav-link" aria-current="page" href=""></a>
+  
+                    <div class="border border-2 rounded-top border-bottom-0 px-2">
+                      <a class="nav-link" href="../index.html">Inicio</a>
                     </div>
+                    <div class="border border-2 rounded-top border-bottom-0 px-2">
+                      <a class="nav-link active" href="./informacion.html">Información</a>
+                    </div>
+                    <div class="border border-2 rounded-top border-bottom-0 px-2">
+                      <a class="nav-link" href="./experiencias.html">Experiencias</a>
+                    </div>
+                    <div class="border border-2 rounded-top border-bottom-0 px-2">
+                      <a class="nav-link" href="./quienessomos.html">Quiénes Somos?</a>
+                    </div>
+                    <div class="border border-2 rounded-top border-bottom-0 px-2">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+  
+                  </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
 
 
-    <main>
+    <main class="row-6">
         <h2>¿Qué Paises te permiten estudiar o trabajar?</h2>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">Nacionalidad</div>
-                <div class="col">Estudiar</div>
-                <div class="col">Trabajar</div>
+        <div class="container text-center p-4">
+            <div class="row p-2 rounded">
+                <div class="col border py-4"  style="background-color: rgba(252, 232, 55, 0.811)">Nacionalidad</div>
+                <div class="col border py-4"  style="background-color: rgba(252, 232, 55, 0.811)">Estudiar</div>
+                <div class="col border py-4"  style="background-color: rgba(252, 232, 55, 0.811)">Trabajar</div>
             </div>
-            <div class="row">
-                <div class="col"> Argentina</div>
-                <div class="col"> Brasil, Dinamarca, Camerun</div>
-                <div class="col"> Kazajistan</div>
+            <div class="row p-2">
+                <div class="card col py-4"> Argentina</div>
+                <div class="card col py-4"> Brasil, Dinamarca, Camerun</div>
+                <div class="card col py-4"> Kazajistan</div>
             </div>
-            <div class="row">
-                <div class="col"> Chile</div>
-                <div class="col"> Holanda, Alemania, Senegal</div>
-                <div class="col"> Serbia</div>
+            <div class="row p-2">
+                <div class="card col py-4"> Chile</div>
+                <div class="card col py-4"> Holanda, Alemania, Senegal</div>
+                <div class="card col py-4"> Serbia</div>
             </div>
-            <div class="row">
-                <div class="col">Brasil</div>
-                <div class="col">Canada, Estados Unidos, Peru </div>
-                <div class="col">Montenegro </div>
+            <div class="row p-2">
+                <div class="card col py-4">Brasil</div>
+                <div class="card col py-4">Canada, Estados Unidos, Peru </div>
+                <div class="card col py-4">Montenegro </div>
             </div>
-            <div class="row">
-                <div class="col">Uruguay</div>
-                <div class="col">Rusia, Uganda, Australia</div>
-                <div class="col">Croacia</div>
+            <div class="row p-2">
+                <div class="card col py-4">Uruguay</div>
+                <div class="card col py-4">Rusia, Uganda, Australia</div>
+                <div class="card col py-4">Croacia</div>
             </div>
-            <div class="row">
-                <div class="col">Union Europea</div>
-                <div class="col">Malta, Italia, Honduras</div>
-                <div class="col">Inglaterra</div>
+            <div class="row p-2">
+                <div class="card col py-4">Union Europea</div>
+                <div class="card col py-4">Malta, Italia, Honduras</div>
+                <div class="card col py-4">Inglaterra</div>
             </div>
 
     </main>
 
 
-    <footer>
-        <p>Copyright. Todos los derechos reservados</p>
-
-        <ul>
+    <footer class="row-2">
+        <div class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-md-between">
+          <p class="ms-md-4">Copyright. Todos los derechos reservados</p>
+  
+          <ul class="d-flex me-md-4">
             <li><a href="http://instagram.com" target="_blank"><img src="../assets/images/instagram_icon.png"
-                        class="instagramIcon" alt=""></a></li>
+                  class="instagramIcon" alt=""></a></li>
             <li><a href="http://facebook.com" target="_blank"><img src="../assets/images/facebook_icon.png"
-                        class="facebookIcon" alt=""></a></li>
+                  class="facebookIcon" alt=""></a></li>
             <li><a href="http://Twitter.com" target="_blank"><img src="../assets/images/twitter_icon.png"
-                        class="twitterIcon" alt=""></a></li>
-        </ul>
-
-
-    </footer>
+                  class="twitterIcon" alt=""></a></li>
+          </ul>
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
