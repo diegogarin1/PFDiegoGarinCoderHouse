@@ -6,104 +6,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto | SinFronteras.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,700&display=swap"
-      rel="stylesheet">
+        rel="stylesheet">
 </head>
 
-<body class="layOut">
-    <header>
-        <h1>SinFronteras.Com</h1>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">Inicio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href=""></a>
-                  <a class="nav-link" href="./informacion.html">Información</a>
-                  <a class="nav-link" href="./experiencias.html">Experiencias</a> 
-                  <a class="nav-link" href="./quienessomos.html">Quiénes Somos?</a>
-                  <a class="nav-link active" href="./contacto.html">Contacto</a>
+<body>
+    <div class="container-fluid text-center">
+
+
+        <header>
+            <div class="row vh-18">
+                <div class="d-sm-flex justify-content-between align-items-end">
+
+
+                    <h1 class="logo p-4">SinFronteras.Com</h1>
+
+                    <nav class="navbar navbar-expand-lg">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+
+                                <a class="nav-link" aria-current="page" href=""></a>
+
+                                <div class="border border-2 rounded-top border-bottom-0 px-2"
+                                    style="background-color: #9AD3CD;">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </div>
+                                <div class="border border-2 rounded-top border-bottom-0 px-2"
+                                    style="background-color: #9AD3CD;">
+                                    <a class="nav-link" href="./informacion.html">Información</a>
+                                </div>
+                                <div class="border border-2 rounded-top border-bottom-0 px-2"
+                                    style="background-color: #9AD3CD;">
+                                    <a class="nav-link" href="./experiencias.html">Experiencias</a>
+                                </div>
+                                <div class="border border-2 rounded-top border-bottom-0 px-2"
+                                    style="background-color: #9AD3CD;">
+                                    <a class="nav-link" href="./quienessomos.html">Quiénes Somos?</a>
+                                </div>
+                                <div class="border border-2 rounded-top border-bottom-0 px-2 active-pestaña"
+                                    style="background-color: #9AD3CD;">
+                                    <a class="nav-link active" href="./contacto.html">Contacto</a>
+                                </div>
+                            </div>
+                    </nav>
                 </div>
-              </div>
             </div>
-          </nav>
-    </header>
+
+        </header>
 
 
-    <main>
+        <main>
+            <div class="row vh-72">
 
-        <fieldset>
-            <legend>Contactanos</legend>
-            <form action="" method="post" enctype="text/plain">
-                <div>
-                    <label for="name">Nombre:
-                        <input type="text" name="" id="name">
-                    </label>
+                <h2 class="container mx-auto py-4" style="width: 400px;">Contactanos</h2>
+                <div class="card-contacto col rounded-4">
+                    <div class="d-flex-col justify-items-start">
+
+                        <div class="py-5">
+                            <form class="mb-2" action="" method="post" enctype="text/plain">
+                                <div>
+                                    <label for="name" class="form-label">Nombre:
+                                        <input type="text" name="" id="name" placeholder="Tu nombre">
+                                    </label>
+                                </div>
+                        </div>
+                        <div class="py-2">
+                            <div><label for="nacionalidad" class="form-label">Nacionalidad:</label>
+                                <select name="" id="nacionalidad">
+                                    <option value="">Argentina</option>
+                                    <option value="">Chile</option>
+                                    <option value="">Uruguay</option>
+                                    <option value="">UE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <label for="genero" class="form-label">Genero:
+                                <label for="Hombre">Hombre</label><input type="radio" name="genero" id="Hombre"
+                                    value="Hombre">
+                                <label for="Mujer">Mujer</label><input type="radio" name="genero" id="Mujer"
+                                    value="Mujer">
+                                <label for="NB">No Binario</label><input type="radio" name="genero" id="NB"
+                                    value="No Binario">
+                            </label>
+                        </div>
+                        <div class="py-2">
+                            <label for="email" class="form-label">Email:
+                                <input type="email" name="" id="email" placeholder="name@example.com">
+                            </label>
+                        </div>
+                        <div class="py-2">
+                            <label for="comentarios" class="form-label">Escribe lo que quieras:
+                                <input type="text" name="" id="" placeholder="Escribe aquí..">
+                            </label>
+
+                        </div>
+
+                        <div class="py-3 mx-auto" style="width: 100px;">
+                            <input type="submit" value="Enviar" id="">
+                        </div>
+                        </form>
+                    </div>
                 </div>
-                <div><label for="nacionalidad">Nacionalidad</label>
-                    <select name="" id="nacionalidad">
-                        <option value="">Argentina</option>
-                        <option value="">Chile</option>
-                        <option value="">Uruguay</option>
-                        <option value="">UE</option>
-                    </select>
+            </div>
+        </main>
 
+
+
+        <footer>
+            <div class="row vh-10 ">
+                <div class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-md-between">
+                    <p class="ms-md-4">Copyright. Todos los derechos reservados</p>
+
+                    <ul class="d-flex me-md-4">
+                        <li><a href="http://instagram.com" target="_blank"><img
+                                    src="../assets/images/instagram_icon.png" class="instagram-icon" alt=""></a></li>
+                        <li><a href="http://facebook.com" target="_blank"><img src="../assets/images/facebook_icon.png"
+                                    class="facebook-icon" alt=""></a></li>
+                        <li><a href="http://Twitter.com" target="_blank"><img src="../assets/images/twitter_icon.png"
+                                    class="twitter-icon" alt=""></a></li>
+                    </ul>
                 </div>
-                <div>
-                    <label for="genero">Genero:
-                        <label for="Hombre">Hombre</label><input type="radio" name="genero" id="Hombre" value="Hombre">
-                        <label for="Mujer">Mujer</label><input type="radio" name="genero" id="Mujer" value="Mujer">
-                        <label for="NB">No Binario</label><input type="radio" name="genero" id="NB" value="No Binario">
-                    </label>
-                </div>
-                <div>
-                    <label for="email">Email:
-                        <input type="email" name="" id="email">
-                    </label>
-                </div>
-                <div>
-                    <label for="comentarios">Escribe lo que quieras:
-                        <input type="text" name="" id="">
-                    </label>
-
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar" id="">
-                </div>
-            </form>
-        </fieldset>
-
-    </main>
-
-
-
-    <footer>
-        <p>Copyright. Todos los derechos reservados</p>
-
-
-        <ul>
-            <li><a href="http://instagram.com" target="_blank"><img src="../assets/images/instagram_icon.png"
-                  class="instagramIcon" alt=""></a></li>
-            <li><a href="http://facebook.com" target="_blank"><img src="../assets/images/facebook_icon.png"
-                  class="facebookIcon" alt=""></a></li>
-            <li><a href="http://Twitter.com" target="_blank"><img src="../assets/images/twitter_icon.png" class="twitterIcon"
-                  alt=""></a></li>
-          </ul>
-
-
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
