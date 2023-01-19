@@ -1,0 +1,38 @@
+
+footer {
+    background-color: $celeste;
+    color: $negro;
+
+    ul {
+        list-style: none;
+    }
+}
+
+// MAPA ICONOS
+
+$iconos: (
+    instagram: 32px,
+    facebook: 40px,
+    twitter: 30px,
+);
+
+@each $redsocial,
+$tamano in $iconos {
+.#{$redsocial}-icon {
+    width: $tamano;
+}
+}
+
+$iconos2: (
+    instagram: 5px,
+    facebook: 0px,
+    twitter: 5px,
+);
+
+@each $redsocial,
+$posicion in $iconos2 {
+.#{$redsocial}-icon {
+    margin-top: $posicion !important;
+}
+}
+

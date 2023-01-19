@@ -1,0 +1,25 @@
+header {
+    background-color: $celeste;
+    color: $negro;
+}
+
+.logo {
+    color: $negro;
+    text-align: left !important;
+    font-style: normal !important;
+    font-weight: bolder !important;
+    font-size: 50 !important;
+    font-family: $ubuntu !important;
+    text-shadow: -2px -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+// NAV
+
+.color-nav {
+    color: $celeste !important;
+}
+
+.active-pestaña {
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
