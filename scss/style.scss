@@ -12,12 +12,9 @@
 	padding: 0 !important;
 }
 
-// TIPOGRAFIAS
-
-
 
 // PRIMER MEDIA QUERY DESKTOP FIRST
-@media (max-width: 3000px) {
+@media screen and (max-width: $monitorxl) {
 
 
 	// HEADER
@@ -47,10 +44,14 @@
 
 
 }
+// RESPONSIVE 1200
+
+@media screen and (max-width: $monitor) {}
+
 
 // RESPONSIVE 768
 
-@media (max-width: 768px) {
+@media screen and (max-width: $tablet1) {
 	.logo {
 		width: 20px !important;
 		position: relative !important;
@@ -68,19 +69,28 @@
 		}
 	}
 
+	.card-contacto {
+		margin-right: 5% !important;
+		width: 100% !important;
+		margin-left: 5% !important;
+
+
+	
+	}
+
 }
 
 // RESPONSIVE 425
 
-@media (max-width: 425px) {}
+@media screen and (max-width: $tablet2) {}
 
 // RESPONSIVE 375
 
-@media (max-width: 375px) {}
+@media screen and (max-width: $movil1) {}
 
 // RESPONSIVE 320
 
-@media (max-width: 320px) {
+@media screen and (max-width: $movil2) {
 	.imgindex {
 		position: relative !important;
 		height: 200px !important;
@@ -91,4 +101,25 @@
 		font-size: x-small !important;
 		font-weight: 700 !important;
 	}
+}
+
+// RESPONSIVE LANDSCAPE
+
+@media screen and (min-width: 655px) and (max-width: 656px) and (orientation: landscape) {
+	
+
+	.vh-18 {
+		height: 60vh !important;
+	}
+
+	.vh-72 {
+		min-height: 20vh !important;
+	}
+
+	.vh-10 {
+		height: 20vh !important;
+	}
+
+
+
 }
