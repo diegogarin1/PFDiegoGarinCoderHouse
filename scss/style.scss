@@ -44,6 +44,7 @@
 
 
 }
+
 // RESPONSIVE 1200
 
 @media screen and (max-width: $monitor) {}
@@ -52,11 +53,6 @@
 // RESPONSIVE 768
 
 @media screen and (max-width: $tablet1) {
-	.logo {
-		width: 20px !important;
-		position: relative !important;
-		bottom: 13px !important;
-	}
 
 	.imgindex {
 		width: min-content !important;
@@ -73,9 +69,6 @@
 		margin-right: 5% !important;
 		width: 100% !important;
 		margin-left: 5% !important;
-
-
-	
 	}
 
 }
@@ -91,9 +84,17 @@
 // RESPONSIVE 320
 
 @media screen and (max-width: $movil2) {
+	body {
+		width: 100vw !important;
+		height: 100vh !important;
+	}
+
+
+
+
 	.imgindex {
 		position: relative !important;
-		height: 200px !important;
+		top: 108px !important;
 
 	}
 
@@ -103,23 +104,3 @@
 	}
 }
 
-// RESPONSIVE LANDSCAPE
-
-@media screen and (min-width: 655px) and (max-width: 656px) and (orientation: landscape) {
-	
-
-	.vh-18 {
-		height: 60vh !important;
-	}
-
-	.vh-72 {
-		min-height: 20vh !important;
-	}
-
-	.vh-10 {
-		height: 20vh !important;
-	}
-
-
-
-}

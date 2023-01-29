@@ -1,4 +1,3 @@
-
 footer {
     background-color: $celeste;
     color: $negro;
@@ -18,9 +17,9 @@ $iconos: (
 
 @each $redsocial,
 $tamano in $iconos {
-.#{$redsocial}-icon {
-    width: $tamano;
-}
+    .#{$redsocial}-icon {
+        width: $tamano;
+    }
 }
 
 $iconos2: (
@@ -31,8 +30,7 @@ $iconos2: (
 
 @each $redsocial,
 $posicion in $iconos2 {
-.#{$redsocial}-icon {
-    margin-top: $posicion !important;
+    .#{$redsocial}-icon {
+        margin-top: $posicion !important;
+    }
 }
-}
-
