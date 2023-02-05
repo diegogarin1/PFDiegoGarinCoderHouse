@@ -29,20 +29,22 @@
 
 	@import "../scss/footer.scss";
 
-	// AJUSTES ALTO DE PAGINA
-	.vh-18 {
-		height: 18vh !important;
+	// MAPA AJUSTES PERSONALIZADOS ALTO DE PAGINA
+
+	$partes: (
+		header: 18vh,
+		footer: 10vh,
+	);
+
+	@each $layout,
+	$tamano in $partes {
+		.#{$layout}-alto {
+			height: $tamano !important;
+		}
 	}
-
-	.vh-72 {
-		min-height: 72vh !important;
-	}
-
-	.vh-10 {
-		height: 10vh !important;
-	}
-
-
+	.main-alto {
+	min-height: 72vh !important;
+}
 }
 
 // RESPONSIVE 1200
@@ -50,24 +52,18 @@
 @media screen and (max-width: $monitor) {}
 
 
+// AJUSTE INTERMEDIO
+
+@media screen and (min-width: 993px) and (max-width: 1141px) {
+	.font-resp {
+		font-size: small !important;
+	}
+}
+
+
 // RESPONSIVE 768
 
-@media screen and (max-width: $tablet1) {
-
-	.imgindex {
-		width: min-content !important;
-
-	}
-
-	.ratio-4x3 {
-		@include media-breakpoint-up(md) {
-			--bs-aspect-ratio: 50%; // 2x1
-		}
-	}
-
-
-
-}
+@media screen and (max-width: $tablet1) {}
 
 // RESPONSIVE 425
 
@@ -75,24 +71,13 @@
 
 // RESPONSIVE 375
 
-@media screen and (max-width: $movil1) {}
-
-// RESPONSIVE 320
-
-@media screen and (max-width: $movil2) {
-	body {
-		width: 100vw !important;
-		height: 100vh !important;
-	}
-
-
-
-
-
-
+@media screen and (max-width: $movil1) {
 	.tabla {
 		font-size: x-small !important;
 		font-weight: 700 !important;
 	}
 }
 
+// RESPONSIVE 320
+
+@media screen and (max-width: $movil2) {}

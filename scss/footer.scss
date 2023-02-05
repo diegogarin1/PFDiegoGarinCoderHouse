@@ -1,6 +1,7 @@
 footer {
     background-color: $celeste;
     color: $negro;
+    font-family: $nunito;
 
     ul {
         list-style: none;
@@ -19,6 +20,10 @@ $iconos: (
 $tamano in $iconos {
     .#{$redsocial}-icon {
         width: $tamano;
+
+        &:hover {
+            width: $tamano+10px
+        }
     }
 }
 

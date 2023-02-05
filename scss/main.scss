@@ -9,16 +9,13 @@ main {
 	}
 }
 
-// INDEX
 
-.imgindex {
-	width: min-content !important;
-
-}
+// EFECTO BOTON 
 
 .shake {
-	background-color: #9AD3CD;
-	width: 100px;
+	background-color: $celeste;
+	width: 160px;
+
 }
               
 .shake:hover{
@@ -51,53 +48,28 @@ main {
     }
 
 // PAISES
+
 	.paises{
-		background-image: url(../assets/images/pexels-nataliya-vaitkevich-7235807.jpg);
+		background-image: url(../assets/images/bgpaises.webp);
 		background-size: cover;
 		height: fit-content;
 	}
 
 
-
-
 // EXPERIENCIAS
-
-
 
 
 .bg-blanco {
 	background-color: $blanco;
-
 }
-
-
-
 
 
 
 // TARJETAS
-.card {
-	width: 100%;
-	margin: 20px;
-	border-radius: 6px;
-	overflow: hidden;
-	background: #D9D9D9;
-	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
-
-	&:hover {
-		box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-		transform: translateY(-3%);
-	}
-}
 
 .tabla-top {
-	overflow: hidden;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
-
+	background-color: $verde
 }
 
 .cardtabla {
@@ -120,13 +92,9 @@ main {
 // QUIENES SOMOS
 
 .card-qs {
-	height: 100% !important;
 	border-radius: 6px;
-	overflow: hidden;
-	background: #D9D9D9;
+	background-color: #D9D9D9;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
 }
 
 .imgdiego {
@@ -140,15 +108,8 @@ main {
 // FORMULARIO CONTACTO
 
 .card-contacto {
-	display: grid;
-	place-content: center;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
-
-
 
 
 // ANIMACION KEYFRAMES
